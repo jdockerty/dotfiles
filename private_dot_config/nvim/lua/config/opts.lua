@@ -1,6 +1,6 @@
-vim.opt.tabstop= 4 
-vim.opt.softtabstop= 4
-vim.opt.shiftwidth= 4
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 vim.opt.smartindent = true
 
@@ -21,16 +21,16 @@ vim.opt.shortmess = c
 vim.opt.undofile = true
 vim.opt.incsearch = true -- incremental search
 vim.opt.hlsearch = false -- don't highlight search results
-vim.opt.clipboard =unnamedplus
+vim.opt.clipboard = unnamedplus
 
 -- Start scrolling 8 lines away from top/bottom
-vim.opt.scrolloff = 8 
+vim.opt.scrolloff = 8
 
 -- 80 characters in, there is a line which is a guide for too much indenting.
 vim.opt.colorcolumn = "80"
-vim.opt.signcolumn="yes:1" -- extra column for linting, git, lsp etc.
+vim.opt.signcolumn = "yes:1" -- extra column for linting, git, lsp etc.
 
-vim.opt.completeopt= "menu,menuone,noselect"
+vim.opt.completeopt = "menu,menuone,noselect"
 
 vim.opt.background = "dark"
 
@@ -42,4 +42,3 @@ vim.g.auto_save = true
 -- Defaults, but for being explicit here. When leaving insert mode and
 -- if text changes, i.e. in normal mode will cause a save.
 vim.g.auto_save_events = {"InsertLeave", "TextChanged"}
-
