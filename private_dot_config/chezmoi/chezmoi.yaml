@@ -1,2 +1,4 @@
 diff:
+  pager: delta
   command: delta
+  args: '--color-only'
