@@ -1,3 +1,4 @@
+-- Options
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
@@ -21,7 +22,7 @@ vim.opt.shortmess = c
 vim.opt.undofile = true
 vim.opt.incsearch = true -- incremental search
 vim.opt.hlsearch = false -- don't highlight search results
-vim.opt.clipboard = unnamedplus
+vim.opt.clipboard = "unnamedplus"
 
 -- Start scrolling 8 lines away from top/bottom
 vim.opt.scrolloff = 8
@@ -34,11 +35,11 @@ vim.opt.completeopt = "menu,menuone,noselect"
 
 vim.opt.background = "dark"
 
-vim.terraform_fmt_on_save = true
-
+-- Globals
 vim.g.mapleader = " " -- Set leader key to space
-
+vim.g.maplocalleader = " "
+vim.g.terraform_fmt_on_save = true
 vim.g.auto_save = true
--- Defaults, but for being explicit here. When leaving insert mode and
--- if text changes, i.e. in normal mode will cause a save.
-vim.g.auto_save_events = {"InsertLeave", "TextChanged"}
+
+-- Autosave only on leaving insert mode.
+vim.g.auto_save_events = {"InsertLeave"}

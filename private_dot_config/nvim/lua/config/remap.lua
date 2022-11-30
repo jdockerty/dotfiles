@@ -15,7 +15,7 @@ nnoremap("<leader>fb", "<cmd>lua require('telescope.builtin').buffers()<cr>")
 nnoremap("<leader>fh", "<cmd>lua require('telescope.builtin').help_tags()<cr>")
 
 -- Reload file easily, useful when using git and files are changing
-nnoremap("<silent><leader>r", "<cmd>checktime<cr>")
+nnoremap("<leader>r", ":checktime<cr>")
 
 -- Language Server Info, press 'i' to install in the shown list.
 nnoremap("<leader>li", ":LspInstallInfo<CR>")
@@ -33,15 +33,17 @@ nmap("<leader>Y", '"+Y')
 nnoremap("<leader>d", '"_d')
 vnoremap("<leader>d", '"_d')
 
-nnoremap("<silent><leader>a", ":lua require('harpoon.mark').add_file()<CR>")
-nnoremap("<silent><leader>t", ":lua require('harpoon.ui').toggle_quick_menu()<CR>")
+nnoremap("<silent><leader>a", "<cmd>lua require('harpoon.mark').add_file()<CR>")
+nnoremap("<silent><leader>t", "<cmd>lua require('harpoon.ui').toggle_quick_menu()<CR>")
 
-nnoremap("<silent><leader>ay", ":lua require('harpoon.ui').nav_file(1)<CR>")
-nnoremap("<silent><leader>au", ":lua require('harpoon.ui').nav_file(2)<CR>")
-nnoremap("<silent><leader>ai", ":lua require('harpoon.ui').nav_file(3)<CR>")
-nnoremap("<silent><leader>ao", ":lua require('harpoon.ui').nav_file(4)<CR>")
+nnoremap("<silent><leader>ay", "<cmd>lua require('harpoon.ui').nav_file(1)<CR>")
+nnoremap("<silent><leader>au", "<cmd>lua require('harpoon.ui').nav_file(2)<CR>")
+nnoremap("<silent><leader>ai", "<cmd>lua require('harpoon.ui').nav_file(3)<CR>")
+nnoremap("<silent><leader>ao", "<cmd>lua require('harpoon.ui').nav_file(4)<CR>")
 
 -- Toggle the undo tree on/off
-nnoremap("<silent><leader>u", ":UndotreeToggle<CR> :UndotreeFocus <CR>")
+nnoremap("<silent><leader>u", "<cmd>UndotreeToggle<CR> <cmd>UndotreeFocus<CR>")
 
 nnoremap("<leader>ss", ":write <CR>")
+
+nnoremap("<S-k>", "<cmd>lua vim.lsp.buf.hover()<CR>")
