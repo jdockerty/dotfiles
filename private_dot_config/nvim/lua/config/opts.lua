@@ -27,8 +27,6 @@ vim.opt.clipboard = "unnamedplus"
 -- Start scrolling 8 lines away from top/bottom
 vim.opt.scrolloff = 8
 
--- 80 characters in, there is a line which is a guide for too much indenting.
-vim.opt.colorcolumn = "80"
 vim.opt.signcolumn = "yes:1" -- extra column for linting, git, lsp etc.
 
 vim.opt.completeopt = "menu,menuone,noselect"
