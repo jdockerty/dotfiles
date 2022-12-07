@@ -14,6 +14,9 @@ nnoremap("<leader>fg", "<cmd>lua require('telescope.builtin').live_grep()<cr>")
 nnoremap("<leader>fb", "<cmd>lua require('telescope.builtin').buffers()<cr>")
 nnoremap("<leader>fh", "<cmd>lua require('telescope.builtin').help_tags()<cr>")
 
+-- Short for filename
+nnoremap("<leader>fn", vim.api.nvim_buf_get_name(0))
+
 -- Reload file easily, useful when using git and files are changing
 nnoremap("<leader>r", ":checktime<cr>")
 
