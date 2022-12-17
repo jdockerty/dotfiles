@@ -14,12 +14,14 @@ vim.opt.wrap = false
 vim.opt.cmdheight = 2
 
 vim.opt.encoding = "utf-8"
-vim.opt.updatetime = 200
+vim.opt.updatetime = 100 
 
 --Don't pass messages to |ins-completion-menu|.
 vim.opt.shortmess = c
 
 vim.opt.undofile = true
+vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
+vim.opt.swapfile = false
 vim.opt.incsearch = true -- incremental search
 vim.opt.hlsearch = false -- don't highlight search results
 vim.opt.clipboard = "unnamedplus"
@@ -28,6 +30,7 @@ vim.opt.clipboard = "unnamedplus"
 vim.opt.scrolloff = 8
 
 vim.opt.signcolumn = "yes:1" -- extra column for linting, git, lsp etc.
+vim.opt.colorcolumn = "80"
 
 vim.opt.completeopt = "menu,menuone,noselect"
 
