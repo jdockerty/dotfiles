@@ -1,3 +1,14 @@
+local lsp = require('lsp-zero')
+
+lsp.preset('recommended')
+
+lsp.ensure_installed({
+    "gopls",
+    "rust_analyzer",
+    "terraformls",
+    "pyright",
+    "jsonnet_ls",
+})
 -- Set up nvim-cmp.
 local cmp = require "cmp"
 
@@ -45,57 +56,28 @@ cmp.setup(
     }
 )
 
--- Set up lspconfig.
-local capabilities = require("cmp_nvim_lsp").default_capabilities()
+vim.diagnostic.config({
+    virtual_text = true,
+})
+-- Only use these key bindings on an attached LSP.
+lsp.on_attach(function(client, bufnr)
+  local opts = {buffer = bufnr, remap = false}
 
-require("nvim-lsp-installer").setup {
-    automatic_installation = true -- detect servers to install based on
-}
+  if client.name == "eslint" then
+      vim.cmd.LspStop('eslint')
+      return
+  end
 
--- Setup lspconfig.
-lspconfig = require "lspconfig"
+  vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
+  vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
+  vim.keymap.set("n", "<leader>vws", vim.lsp.buf.workspace_symbol, opts)
+  vim.keymap.set("n", "<leader>vd", vim.diagnostic.open_float, opts)
+  vim.keymap.set("n", "[d", vim.diagnostic.goto_next, opts)
+  vim.keymap.set("n", "]d", vim.diagnostic.goto_prev, opts)
+  vim.keymap.set("n", "<leader>vca", vim.lsp.buf.code_action, opts)
+  vim.keymap.set("n", "<leader>vrr", vim.lsp.buf.references, opts)
+  vim.keymap.set("n", "<leader>vrn", vim.lsp.buf.rename, opts)
+  vim.keymap.set("i", "<C-h>", vim.lsp.buf.signature_help, opts)
+end)
 
--- Language servers
-
-lspconfig.rust_analyzer.setup {
-    capabilities = capabilities,
-    on_attach = on_attach
-}
-
-util = require "lspconfig/util"
-
-lspconfig.gopls.setup {
-    capabilities = capabilities,
-    cmd = {"gopls", "serve"},
-    filetypes = {"go", "gomod"},
-    root_dir = util.root_pattern("go.work", "go.mod", ".git"),
-    settings = {
-        gopls = {
-            analyses = {
-                unusedparams = true
-            },
-            staticcheck = true
-        }
-    }
-}
-
-lspconfig.terraformls.setup {
-    on_attach = on_attach,
-    capabilities = capabilities
-}
-
-lspconfig.jsonnet_ls.setup {
-    on_attach = on_attach,
-    capabilities = capabilities
-}
-
-lspconfig.pyright.setup {
-    on_attach = on_attach,
-    capabilities = capabilities
-}
-
-require("nvim-treesitter.configs").setup {
-    highlight = {
-        enable = true
-    }
-}
+lsp.setup()
