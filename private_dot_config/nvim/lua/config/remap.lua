@@ -20,8 +20,9 @@ vim.keymap.set("n","<leader>fn", vim.api.nvim_buf_get_name(0))
 -- Reload file easily, useful when using git and files are changing
 vim.keymap.set("n","<leader>r", ":checktime<cr>")
 
--- Language Server Info, press 'i' to install in the shown list.
-vim.keymap.set("n","<leader>li", ":LspInstallInfo<CR>")
+-- Language Server shortcuts
+vim.keymap.set("n","<leader>li", ":LspInfo<CR>")
+vim.keymap.set("n", "<leader>lr", ":LspRestart <CR>")
 
 -- Save/Source current file, used when editing init.vim
 vim.keymap.set("n","<silent><leader>so", ":w <CR> :source %<CR>")
@@ -41,3 +42,4 @@ vim.keymap.set("n","<leader>ss", ":write <CR>")
 
 vim.keymap.set("n", "<leader>goi", ":GoImports <CR>")
 vim.keymap.set("n", "<leader>gof", ":GoFmt <CR>")
+
