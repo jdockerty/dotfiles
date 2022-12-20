@@ -39,4 +39,5 @@ vim.keymap.set("v","<leader>d", '"_d')
 
 vim.keymap.set("n","<leader>ss", ":write <CR>")
 
-vim.keymap.set("n","<S-k>", "<cmd>lua vim.lsp.buf.hover()<CR>")
+vim.keymap.set("n", "<leader>goi", ":GoImports <CR>")
+vim.keymap.set("n", "<leader>gof", ":GoFmt <CR>")
