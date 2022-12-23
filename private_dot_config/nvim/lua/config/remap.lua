@@ -25,10 +25,10 @@ vim.keymap.set("n","<leader>li", ":LspInfo<CR>")
 vim.keymap.set("n", "<leader>lr", ":LspRestart <CR>")
 
 -- Save/Source current file, used when editing init.vim
-vim.keymap.set("n","<silent><leader>so", ":w <CR> :source %<CR>")
+vim.keymap.set("n","<leader>so", ":w <CR> :source %<CR>")
 
 -- Clear buffers, except the current one. The pipe must be escaped using '\'.
-vim.keymap.set("n","<silent><leader>bd", ":%bd\\|e#<CR>")
+vim.keymap.set("n","<leader>bd", ":%bd\\|e#<CR>")
 
 vim.keymap.set("n","<leader>y", '"+y')
 vim.keymap.set("v","<leader>y", '"+y')
@@ -43,3 +43,4 @@ vim.keymap.set("n","<leader>ss", ":write <CR>")
 vim.keymap.set("n", "<leader>goi", ":GoImports <CR>")
 vim.keymap.set("n", "<leader>gof", ":GoFmt <CR>")
 
+vim.keymap.set("n", "<leader>tw", ":StripTrailingWhitespace <CR>")

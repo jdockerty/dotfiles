@@ -31,6 +31,7 @@ return require("packer").startup(
 
         use 'godlygeek/tabular'
         use 'preservim/vim-markdown'
+        use 'axelf4/vim-strip-trailing-whitespace'
 
         use { 
   'VonHeikemen/lsp-zero.nvim',
