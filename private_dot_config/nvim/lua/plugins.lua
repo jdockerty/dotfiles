@@ -29,6 +29,9 @@ return require("packer").startup(
         use "vim-airline/vim-airline"
         use "airblade/vim-gitgutter"
 
+        use 'godlygeek/tabular'
+        use 'preservim/vim-markdown'
+
         use { 
   'VonHeikemen/lsp-zero.nvim',
   requires = {
