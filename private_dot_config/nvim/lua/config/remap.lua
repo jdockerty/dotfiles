@@ -43,4 +43,8 @@ vim.keymap.set("n","<leader>ss", ":write <CR>")
 vim.keymap.set("n", "<leader>goi", ":GoImports <CR>")
 vim.keymap.set("n", "<leader>gof", ":GoFmt <CR>")
 
+-- Strip all trailing whitespace from current file
 vim.keymap.set("n", "<leader>tw", ":StripTrailingWhitespace <CR>")
+
+-- Insert table of contents at the current cursor position.
+vim.keymap.set("n", "<leader>toc", ":InsertToc <CR>")
