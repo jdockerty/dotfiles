@@ -102,6 +102,7 @@ source "${HOME}/.kube-completion"
 #source "${HOME}/.confluent-completion"
 #source "${HOME}/.k3d-completion"
 source "${HOME}/.istioctl-completion"
+source "${HOME}/.clusterctl-completion"
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
 alias kubectx="kubectl ctx"
