@@ -44,3 +44,7 @@ vim.keymap.set("n", "<leader>goi", ":GoImports <CR>")
 vim.keymap.set("n", "<leader>gof", ":GoFmt <CR>")
 
 vim.keymap.set("n", "<leader>tw", ":StripTrailingWhitespace <CR>")
+
+-- Double tap 'j' in order to leave insert mode.
+-- This binding is for the Kinesis Advantage 2 keyboard layout
+vim.keymap.set("i", "jj", "<Esc>")
