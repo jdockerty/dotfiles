@@ -91,6 +91,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias gss="git status --short"
 
 # From table of terminfo entires (toe -a for available options) 
 export TERM=xterm-88color
