@@ -40,7 +40,7 @@ vim.opt.background = "dark"
 vim.g.mapleader = " " -- Set leader key to space
 vim.g.maplocalleader = " "
 vim.g.terraform_fmt_on_save = true
-vim.g.auto_save = true
+-- vim.g.auto_save = true
 
 -- Autosave only on leaving insert mode.
-vim.g.auto_save_events = {"InsertLeave"}
+-- vim.g.auto_save_events = {"InsertLeave"}
