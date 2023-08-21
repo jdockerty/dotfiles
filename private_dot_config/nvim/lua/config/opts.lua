@@ -26,6 +26,11 @@ vim.opt.incsearch = true -- incremental search
 vim.opt.hlsearch = false -- don't highlight search results
 vim.opt.clipboard = "unnamedplus"
 
+--- Case insensitive search, unless the search term contains uppercase then switch
+--- to sensitive.
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
+
 -- Start scrolling 8 lines away from top/bottom
 vim.opt.scrolloff = 8
 
