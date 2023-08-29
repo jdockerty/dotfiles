@@ -14,7 +14,7 @@ vim.opt.wrap = false
 vim.opt.cmdheight = 2
 
 vim.opt.encoding = "utf-8"
-vim.opt.updatetime = 100 
+vim.opt.updatetime = 100
 
 --Don't pass messages to |ins-completion-menu|.
 vim.opt.shortmess = c
