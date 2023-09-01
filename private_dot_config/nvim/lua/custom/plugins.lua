@@ -26,6 +26,15 @@ local plugins = {
 		},
 	},
 
+	-- Override nvim-tree to enable netrw
+	{
+		"nvim-tree/nvim-tree.lua",
+		opts = {
+			disable_netrw = false,
+			hijack_netrw = false,
+		},
+	},
+
 	{ "williamboman/mason-lspconfig.nvim" },
 
 	{
