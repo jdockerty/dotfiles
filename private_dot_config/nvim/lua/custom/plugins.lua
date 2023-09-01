@@ -50,6 +50,7 @@ local plugins = {
 				"rust",
 				"jsonnet",
 				"python",
+				"terraform",
 			},
 		},
 	},
