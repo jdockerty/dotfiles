@@ -54,6 +54,8 @@ local plugins = {
 			},
 		},
 	},
+
+	{ "mbbill/undotree", lazy = false },
 }
 
 return plugins

@@ -19,6 +19,8 @@ M.general = {
 
 		["<leader>li"] = { ":LspInfo<cr>" },
 		["<leader>lr"] = { ":LspRestart<cr>" },
+
+		["<leader>u"] = { ":UndotreeToggle<cr>", "Toggle undotree in the current buffer" },
 	},
 
 	v = {
