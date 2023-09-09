@@ -26,6 +26,11 @@ vim.opt.incsearch = true -- incremental search
 vim.opt.hlsearch = false -- don't highlight search results
 vim.opt.clipboard = "unnamedplus"
 
+--- Case insensitive search, unless the search term contains uppercase then switch
+--- to sensitive.
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
+
 -- Start scrolling 8 lines away from top/bottom
 vim.opt.scrolloff = 8
 
@@ -40,7 +45,7 @@ vim.opt.background = "dark"
 vim.g.mapleader = " " -- Set leader key to space
 vim.g.maplocalleader = " "
 vim.g.terraform_fmt_on_save = true
-vim.g.auto_save = true
+-- vim.g.auto_save = true
 
 -- Autosave only on leaving insert mode.
-vim.g.auto_save_events = {"InsertLeave"}
+-- vim.g.auto_save_events = {"InsertLeave"}

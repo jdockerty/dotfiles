@@ -5,7 +5,6 @@ lsp.preset('recommended')
 lsp.ensure_installed({
     "gopls",
     "rust_analyzer",
-    "terraformls",
     "pyright",
     "jsonnet_ls",
 })
