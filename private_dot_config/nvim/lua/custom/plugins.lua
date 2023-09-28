@@ -56,6 +56,8 @@ local plugins = {
 	},
 
 	{ "mbbill/undotree", lazy = false },
+
+	{ "mzlogin/vim-markdown-toc" },
 }
 
 return plugins
