@@ -56,6 +56,10 @@ local plugins = {
 	},
 
 	{ "mbbill/undotree", lazy = false },
+
+	{ "mzlogin/vim-markdown-toc" },
+
+	{ "axelf4/vim-strip-trailing-whitespace", lazy = false },
 }
 
 return plugins
