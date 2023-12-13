@@ -1,5 +1,8 @@
 local M = {}
 
+local mark = require("harpoon.mark")
+local ui = require("harpoon.ui")
+
 M.general = {
 
 	n = {
@@ -21,6 +24,34 @@ M.general = {
 		["<leader>lr"] = { ":LspRestart<cr>" },
 
 		["<leader>u"] = { ":UndotreeToggle<cr>", "Toggle undotree in the current buffer" },
+
+		["<leader>a"] = { mark.add_file, "Harpoon add file" },
+		["<leader>t"] = { ui.toggle_quick_menu, "Harpoon menu toggle" },
+
+		["<leader>ay"] = {
+			function()
+				ui.nav_file(1)
+			end,
+			"Harpoon quick toggle",
+		},
+		["<leader>au"] = {
+			function()
+				ui.nav_file(2)
+			end,
+			"Harpoon quick toggle",
+		},
+		["<leader>ai"] = {
+			function()
+				ui.nav_file(3)
+			end,
+			"Harpoon quick toggle",
+		},
+		["<leader>ao"] = {
+			function()
+				ui.nav_file(4)
+			end,
+			"Harpoon quick toggle",
+		},
 	},
 
 	v = {

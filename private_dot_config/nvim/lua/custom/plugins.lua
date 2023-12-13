@@ -57,9 +57,11 @@ local plugins = {
 
 	{ "mbbill/undotree", lazy = false },
 
-	{ "mzlogin/vim-markdown-toc" },
+	{ "mzlogin/vim-markdown-toc", lazy = false },
 
 	{ "axelf4/vim-strip-trailing-whitespace", lazy = false },
+
+	{ "ThePrimeagen/harpoon", branch = "harpoon2", lazy = false },
 }
 
 return plugins
