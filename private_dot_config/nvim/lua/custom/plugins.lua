@@ -62,6 +62,8 @@ local plugins = {
 	{ "axelf4/vim-strip-trailing-whitespace", lazy = false },
 
 	{ "ThePrimeagen/harpoon", branch = "harpoon2", lazy = false },
+
+	{ "github/copilot.vim", lazy = false },
 }
 
 return plugins

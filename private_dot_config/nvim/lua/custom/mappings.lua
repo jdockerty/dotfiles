@@ -52,6 +52,8 @@ M.general = {
 			end,
 			"Harpoon quick toggle",
 		},
+		["<leader>ce"] = { "<cmd>Copilot enable<cr>", "Enable copilot" },
+		["<leader>cd"] = { "<cmd>Copilot disable<cr>", "Disable copilot" },
 	},
 
 	v = {
