@@ -1,7 +1,8 @@
 local M = {}
 
-local mark = require("harpoon.mark")
-local ui = require("harpoon.ui")
+--local harpoon = require("harpoon")
+
+--harpoon:setup()
 
 M.general = {
 
@@ -25,33 +26,33 @@ M.general = {
 
 		["<leader>u"] = { ":UndotreeToggle<cr>", "Toggle undotree in the current buffer" },
 
-		["<leader>a"] = { mark.add_file, "Harpoon add file" },
-		["<leader>t"] = { ui.toggle_quick_menu, "Harpoon menu toggle" },
+		--["<leader>a"] = { mark.add_file, "Harpoon add file" },
+		--["<leader>t"] = { harpoon.ui:toggle_quick_menu(harpoon:list()), "Harpoon menu toggle" },
 
-		["<leader>ay"] = {
-			function()
-				ui.nav_file(1)
-			end,
-			"Harpoon quick toggle",
-		},
-		["<leader>au"] = {
-			function()
-				ui.nav_file(2)
-			end,
-			"Harpoon quick toggle",
-		},
-		["<leader>ai"] = {
-			function()
-				ui.nav_file(3)
-			end,
-			"Harpoon quick toggle",
-		},
-		["<leader>ao"] = {
-			function()
-				ui.nav_file(4)
-			end,
-			"Harpoon quick toggle",
-		},
+		--["<leader>ay"] = {
+		--	function()
+		--		ui.nav_file(1)
+		--	end,
+		--	"Harpoon quick toggle",
+		--},
+		--["<leader>au"] = {
+		--	function()
+		--		ui.nav_file(2)
+		--	end,
+		--	"Harpoon quick toggle",
+		--},
+		--["<leader>ai"] = {
+		--	function()
+		--		ui.nav_file(3)
+		--	end,
+		--	"Harpoon quick toggle",
+		--},
+		--["<leader>ao"] = {
+		--	function()
+		--		ui.nav_file(4)
+		--	end,
+		--	"Harpoon quick toggle",
+		--},
 		["<leader>ce"] = { "<cmd>Copilot enable<cr>", "Enable copilot" },
 		["<leader>cd"] = { "<cmd>Copilot disable<cr>", "Disable copilot" },
 	},
