@@ -51,3 +51,5 @@ vim.g.terraform_fmt_on_save = true
 -- vim.g.auto_save_events = {"InsertLeave"}
 
 vim.g.copilot_assume_mapped = true
+-- Highlight comments to a different colour than the theme.
+vim.api.nvim_set_hl(0, "@comment", {fg = "#ffe6ff"})
