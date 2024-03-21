@@ -1,0 +1,18 @@
+# Subjects:
+#   - feat
+#   - test
+#   - docs
+#   - fix
+#   - perf
+#   - refactor  => neither fix nor add new feature
+#   - build     => build system or external dependencies
+#   - ci        => CI configuration files and scripts
+#   - chore     => no code changes!
+#   - style     => white-space, formatting, etc
+#   - revert
+#
+# GH Footer keywords:    [closes, fixes, resolves]
+# Cross-repo references: jdockerty/repo#42
+#
+#####################################################################
+#
