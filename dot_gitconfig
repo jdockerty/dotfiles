@@ -1,0 +1,26 @@
+[user]
+	name = Jack Dockerty
+[core]
+	pager = delta
+	bare = false
+    editor = /usr/bin/nvim
+[interactive]
+	diffFilter = delta --color-only
+[delta]
+	navigate = true
+	light = false
+[merge]
+	conflictstyle = diff3
+[diff]
+	colorMoved = default
+[init]
+	defaultBranch = main
+[pull]
+	rebase = false
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+[commit]
+	# Commit message template (https://www.conventionalcommits.org/en/v1.0.0/)
+	template = ~/.gittemplate
+	# Show diff in commit message editor
+	verbose = true
