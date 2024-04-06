@@ -67,7 +67,7 @@ local plugins = {
 		dependencies = { "nvim-lua/plenary.nvim" },
 	},
 
-	{ "github/copilot.vim", lazy = false },
+	-- { "github/copilot.vim", lazy = false },
 }
 
 return plugins
