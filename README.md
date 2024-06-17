@@ -4,5 +4,7 @@
 Grab with [`chezmoi`](https://www.chezmoi.io/) dotfiles manager.
 
 ```bash
-chezmoi init --apply --ssh jdockerty/dotfiles
+# Install nvchad
+git clone https://github.com/NvChad/starter ~/.config/nvim && nvim
+chezmoi init https://github.com/jdockerty/dotfiles --apply
 ```
