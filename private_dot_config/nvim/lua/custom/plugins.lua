@@ -22,7 +22,7 @@ local plugins = {
 				"rust_analyzer",
 				"gopls",
 				"jsonnet-language-server",
-				"templ",
+				--"templ",
 			},
 		},
 	},
@@ -46,7 +46,7 @@ local plugins = {
 				"vim",
 				"lua",
 
-				"templ",
+				-- "templ",
 				"json",
 				"go",
 				"rust",
