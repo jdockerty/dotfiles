@@ -1,0 +1,7 @@
+[editor]
+# Force true color for various themes.
+true-color = true
+
+[keys.insert]
+# Use 'jk' to go back into normal mode.
+j = { k = "normal_mode"}
