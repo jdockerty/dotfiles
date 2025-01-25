@@ -1,3 +1,5 @@
+theme = "gruvbox"
+
 [editor]
 # Force true color for various themes.
 true-color = true
