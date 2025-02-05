@@ -4,6 +4,9 @@ theme = "gruvbox"
 # Force true color for various themes.
 true-color = true
 
+[editor.file-picker]
+hidden = false
+
 [keys.insert]
 # Use 'jk' to go back into normal mode.
 j = { k = "normal_mode"}
