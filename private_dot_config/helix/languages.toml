@@ -1,5 +1,3 @@
-
-
 # https://github.com/estin/simple-completion-language-server
 [language-server.scls]
 command = "simple-completion-language-server"
@@ -17,11 +15,11 @@ feature_citations = false            # enable citation completion (only on `cita
 # Use regular word completion with rust files
 [[language]]
 name = "rust"
-language-servers = [ "scls", "rust-analyzer" ]
+language-servers = [ "rust-analyzer", "scls" ]
 
 [[language]]
 name = "go"
-language-servers = [ "scls", "gopls" ]
+language-servers = [ "gopls", "scls" ]
 
 # Use `:set-language stub` to ensure that this server starts on any doc.
 [[language]]
