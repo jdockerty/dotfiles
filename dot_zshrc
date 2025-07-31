@@ -132,8 +132,10 @@ function gi() { curl -sLw n https://www.toptal.com/developers/gitignore/api/$@ ;
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/bin/vault vault
 
-if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
-  exec tmux new-session -A -s main
-fi
+# Replaced with ghostty splits.
+# Uncomment if this becomes problematic.
+# if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+#   exec tmux new-session -A -s main
+# fi
 
 eval "$(starship init zsh)"
