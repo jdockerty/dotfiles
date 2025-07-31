@@ -1,3 +1,5 @@
+theme = ChallengerDeep
+
 keybind = ctrl+a>w=new_tab
 
 keybind = ctrl+a>1=goto_tab:1 
