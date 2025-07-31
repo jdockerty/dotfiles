@@ -1,0 +1,17 @@
+theme = "gruvbox"
+
+[editor]
+# Force true color for various themes.
+true-color = true
+
+end-of-line-diagnostics = "hint"
+
+[editor.inline-diagnostics]
+cursor-line = "error"
+
+[editor.file-picker]
+hidden = false
+
+[keys.insert]
+# Use 'jk' to go back into normal mode.
+j = { k = "normal_mode"}
