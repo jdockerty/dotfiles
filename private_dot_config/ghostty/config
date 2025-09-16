@@ -1,4 +1,4 @@
-theme = ChallengerDeep
+theme = "Challenger Deep"
 
 keybind = ctrl+a>r=reload_config
 
