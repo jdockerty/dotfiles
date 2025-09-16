@@ -52,3 +52,10 @@ language-servers = [ "jdtls" ]
 
 [language-server]
 jdtls = { command = "jdtls" }
+
+# Python
+#
+[[language]]
+name = "python"
+file-types = ["py"]
+language-servers = [ "pylsp" ]
