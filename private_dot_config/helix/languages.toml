@@ -1,3 +1,6 @@
+
+# Simple language server (for non-coding syntax completions)
+
 # https://github.com/estin/simple-completion-language-server
 [language-server.scls]
 command = "simple-completion-language-server"
@@ -12,15 +15,20 @@ feature_unicode_input = false        # enable "unicode input"
 feature_paths = false                # enable path completion
 feature_citations = false            # enable citation completion (only on `citation` feature enabled)
 
-# Use regular word completion with rust files
+# Rust
+
 [[language]]
 name = "rust"
 language-servers = [ "rust-analyzer", "scls" ]
+
+# Go
 
 [[language]]
 name = "go"
 language-servers = [ "gopls", "scls" ]
 
+# Stub for regular word auto-complete
+#
 # Use `:set-language stub` to ensure that this server starts on any doc.
 [[language]]
 name = "stub"
@@ -30,3 +38,17 @@ shebangs = []
 roots = []
 auto-format = false
 language-servers = [ "scls" ]
+
+# Java
+
+[[language]]
+name = "java"
+scope = "source.java"
+injection-regex = "java"
+file-types = ["java"]
+roots = ["pom.xml", "build.gradle", ]
+indent = { tab-width = 4, unit = "    " }
+language-servers = [ "jdtls" ]
+
+[language-server]
+jdtls = { command = "jdtls" }
