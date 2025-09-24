@@ -1,6 +1,6 @@
 theme = "Challenger Deep"
 
-keybind = ctrl+f=write_scrollback_file:paste
+keybind = ctrl+a>f=write_scrollback_file:paste
 
 keybind = ctrl+a>r=reload_config
 
